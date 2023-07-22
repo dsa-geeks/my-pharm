@@ -2886,7 +2886,7 @@ public class MainWindow extends javax.swing.JFrame {
         usrgen.setBackground(new java.awt.Color(51, 51, 51));
         usrgen.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         usrgen.setForeground(new java.awt.Color(255, 255, 255));
-        usrgen.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Gender :", "Male", "Female", "Transgender", "Others" }));
+        usrgen.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Gender :", "Male", "Female" }));
 
         jLabel93.setForeground(new java.awt.Color(255, 255, 255));
         jLabel93.setText("*Password should be atleast 6 character");
@@ -5108,7 +5108,7 @@ try{
            
         }
     }
-    catch(Exception e){
+    catch(NumberFormatException | SQLException e){
         JOptionPane.showMessageDialog(null,e.getMessage(),"Error",2);
     }
         if(billBarcode.getText().equals("")||billQuantity.getSelectedIndex()==0){
@@ -5161,7 +5161,7 @@ get_amount();
         }
         }
     }
-    catch(Exception e){
+    catch(HeadlessException | NumberFormatException | SQLException e){
     JOptionPane.showMessageDialog(null,e.getMessage(),"Error",2);
     }
     }
@@ -5549,7 +5549,7 @@ get_amount();
                    company_list();
                    company_clear();
                }
-               catch(Exception e){
+               catch(HeadlessException | SQLException e){
                    JOptionPane.showMessageDialog(null, e.getMessage(),"Error", 2);
               }
            }
@@ -5584,7 +5584,7 @@ get_amount();
             database.pstmt=database.con.prepareStatement(sql);
             database.rst=database.pstmt.executeQuery();
             jTable1.setModel(DbUtils.resultSetToTableModel(database.rst));
-        }catch(Exception e){
+        }catch(SQLException e){
             JOptionPane.showMessageDialog(null,e.getMessage(),"Error",2);
         }
 
