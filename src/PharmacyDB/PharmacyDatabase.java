@@ -7,13 +7,14 @@ public class PharmacyDatabase {
     public PreparedStatement pstmt=null;
     public ResultSet rst=null;
   public PharmacyDatabase (){
-      try{
-        Class.forName("com.mysql.jdbc.Driver");
-        con=DriverManager.getConnection("jdbc:mysql://localhost/pos","root","");
-      }
-      catch(ClassNotFoundException | SQLException e){
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/mypharm", "root", "");
+        } catch (ClassNotFoundException | SQLException e) 
+        {
             System.out.println("Driver not loaded successfuly");
             System.out.println(e.getMessage()); 
-      }
+            //Logger.getLogger(ConnectionProvider.class.getName()).log(Level.SEVERE, null, e);
+        }
     }   
 }

@@ -8,6 +8,7 @@ package apps;
 
 import PharmacyDB.PharmacyDatabase;
 import java.awt.Color;
+import java.awt.HeadlessException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -125,7 +126,7 @@ public class MainWindow extends javax.swing.JFrame {
         jButton16 = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        dquantity = new javax.swing.JComboBox<String>();
+        dquantity = new javax.swing.JComboBox<>();
         jLabel15 = new javax.swing.JLabel();
         AddUpdateButton = new javax.swing.JButton();
         dcp = new javax.swing.JTextField();
@@ -167,7 +168,7 @@ public class MainWindow extends javax.swing.JFrame {
         jButton17 = new javax.swing.JButton();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
-        dquantity1 = new javax.swing.JComboBox<String>();
+        dquantity1 = new javax.swing.JComboBox<>();
         jLabel31 = new javax.swing.JLabel();
         jButton18 = new javax.swing.JButton();
         dcp1 = new javax.swing.JTextField();
@@ -407,12 +408,12 @@ public class MainWindow extends javax.swing.JFrame {
         logindetails = new javax.swing.JInternalFrame();
         jPanel36 = new javax.swing.JPanel();
         jPanel37 = new javax.swing.JPanel();
-        detaily = new javax.swing.JComboBox<String>();
+        detaily = new javax.swing.JComboBox<>();
         jLabel107 = new javax.swing.JLabel();
-        detailm = new javax.swing.JComboBox<String>();
-        detaild = new javax.swing.JComboBox<String>();
+        detailm = new javax.swing.JComboBox<>();
+        detaild = new javax.swing.JComboBox<>();
         jLabel108 = new javax.swing.JLabel();
-        detailusr = new javax.swing.JComboBox<String>();
+        detailusr = new javax.swing.JComboBox<>();
         jScrollPane16 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel106 = new javax.swing.JLabel();
@@ -492,7 +493,6 @@ public class MainWindow extends javax.swing.JFrame {
         jToolBar1.setForeground(new java.awt.Color(254, 254, 254));
         jToolBar1.setRollover(true);
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Dialog", 1, 25)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-add-50.png"))); // NOI18N
         jButton1.setToolTipText("Add Medicine");
@@ -508,7 +508,6 @@ public class MainWindow extends javax.swing.JFrame {
         });
         jToolBar1.add(jButton1);
 
-        jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-search-more-50.png"))); // NOI18N
         jButton2.setToolTipText("Search/Update/Delete");
         jButton2.setBorder(null);
@@ -523,7 +522,6 @@ public class MainWindow extends javax.swing.JFrame {
         });
         jToolBar1.add(jButton2);
 
-        jButton3.setBackground(new java.awt.Color(255, 255, 255));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-reminders-50.png"))); // NOI18N
         jButton3.setToolTipText("Medicine List");
         jButton3.setBorder(null);
@@ -538,7 +536,6 @@ public class MainWindow extends javax.swing.JFrame {
         });
         jToolBar1.add(jButton3);
 
-        jButton4.setBackground(new java.awt.Color(255, 255, 255));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-add-property-50.png"))); // NOI18N
         jButton4.setToolTipText("Add Stock");
         jButton4.setBorder(null);
@@ -548,7 +545,6 @@ public class MainWindow extends javax.swing.JFrame {
         jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(jButton4);
 
-        jButton5.setBackground(new java.awt.Color(255, 255, 255));
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-update-50.png"))); // NOI18N
         jButton5.setToolTipText("Update stock");
         jButton5.setBorder(null);
@@ -558,7 +554,6 @@ public class MainWindow extends javax.swing.JFrame {
         jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(jButton5);
 
-        jButton6.setBackground(new java.awt.Color(255, 255, 255));
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-list-view-50.png"))); // NOI18N
         jButton6.setToolTipText("View Stock");
         jButton6.setBorder(null);
@@ -568,7 +563,6 @@ public class MainWindow extends javax.swing.JFrame {
         jButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(jButton6);
 
-        jButton7.setBackground(new java.awt.Color(255, 255, 255));
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-bill-50(1).png"))); // NOI18N
         jButton7.setToolTipText("Generate Bill");
         jButton7.setBorder(null);
@@ -578,7 +572,6 @@ public class MainWindow extends javax.swing.JFrame {
         jButton7.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(jButton7);
 
-        jButton8.setBackground(new java.awt.Color(255, 255, 255));
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-invoice-50.png"))); // NOI18N
         jButton8.setToolTipText("Bill By Bill No.");
         jButton8.setBorder(null);
@@ -588,7 +581,6 @@ public class MainWindow extends javax.swing.JFrame {
         jButton8.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(jButton8);
 
-        jButton9.setBackground(new java.awt.Color(255, 255, 255));
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-mobile-payment-50.png"))); // NOI18N
         jButton9.setToolTipText("Bill by Mob No.");
         jButton9.setBorder(null);
@@ -598,7 +590,6 @@ public class MainWindow extends javax.swing.JFrame {
         jButton9.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(jButton9);
 
-        jButton10.setBackground(new java.awt.Color(255, 255, 255));
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-customer-insight-50(1).png"))); // NOI18N
         jButton10.setToolTipText("Customer List");
         jButton10.setBorder(null);
@@ -608,7 +599,6 @@ public class MainWindow extends javax.swing.JFrame {
         jButton10.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(jButton10);
 
-        jButton11.setBackground(new java.awt.Color(255, 255, 255));
         jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-forgot-password-50.png"))); // NOI18N
         jButton11.setToolTipText("Reset Password");
         jButton11.setBorder(null);
@@ -618,7 +608,6 @@ public class MainWindow extends javax.swing.JFrame {
         jButton11.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(jButton11);
 
-        jButton12.setBackground(new java.awt.Color(255, 255, 255));
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-web-secure-session-sign-out-internet-logoff-50.png"))); // NOI18N
         jButton12.setToolTipText("Log Out");
         jButton12.setBorder(null);
@@ -628,6 +617,7 @@ public class MainWindow extends javax.swing.JFrame {
         jToolBar1.add(jButton12);
         jToolBar1.add(jScrollPane17);
 
+        jDesktopPane1.setPreferredSize(new java.awt.Dimension(1200, 1000));
         jDesktopPane1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         AddMedicine.setBackground(new java.awt.Color(255, 255, 255));
@@ -640,6 +630,8 @@ public class MainWindow extends javax.swing.JFrame {
         AddMedicine.setResizable(true);
         AddMedicine.setTitle("Add Medicine");
         AddMedicine.setFont(new java.awt.Font("Dialog", 0, 30)); // NOI18N
+        AddMedicine.setMinimumSize(new java.awt.Dimension(2000, 650));
+        AddMedicine.setPreferredSize(new java.awt.Dimension(1380, 650));
         AddMedicine.setVisible(false);
         AddMedicine.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -651,52 +643,50 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(254, 254, 254));
         jLabel3.setText("Drug_Name:");
-        Add_Pannel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 50, -1, 30));
+        Add_Pannel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 50, -1, 30));
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(254, 254, 254));
         jLabel4.setText("Company_Name :");
-        Add_Pannel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 180, -1, 40));
+        Add_Pannel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 180, -1, 40));
 
         jLabel5.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(254, 254, 254));
         jLabel5.setText("Drug_Code:");
-        Add_Pannel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 190, -1, 30));
+        Add_Pannel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 190, -1, 30));
 
         jLabel6.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(254, 254, 254));
         jLabel6.setText("Drug_Sup:");
-        Add_Pannel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, -1, 30));
+        Add_Pannel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 250, -1, 30));
 
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(254, 254, 254));
         jLabel7.setText("Company_Contact :");
-        Add_Pannel.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 50, -1, 30));
+        Add_Pannel.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 50, -1, 30));
 
         jLabel8.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(254, 254, 254));
         jLabel8.setText("Suplier_Contact :");
-        Add_Pannel.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, -1, 30));
+        Add_Pannel.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 120, -1, 30));
 
         jLabel9.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(254, 254, 254));
         jLabel9.setText("Drug_Purpose:");
-        Add_Pannel.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 310, -1, 30));
+        Add_Pannel.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, -1, 30));
 
         jLabel10.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(254, 254, 254));
         jLabel10.setText("Drug_Type:");
-        Add_Pannel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, -1, 40));
+        Add_Pannel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 110, -1, 40));
 
-        dname.setBackground(new java.awt.Color(255, 255, 255));
         dname.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         dname.setForeground(new java.awt.Color(51, 51, 51));
         dname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
         dname.setMargin(new java.awt.Insets(0, 20, 0, 0));
         dname.setPreferredSize(new java.awt.Dimension(14, 30));
-        Add_Pannel.add(dname, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, 250, 40));
+        Add_Pannel.add(dname, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 40, 250, 40));
 
-        dcode.setBackground(new java.awt.Color(255, 255, 255));
         dcode.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         dcode.setForeground(new java.awt.Color(51, 51, 51));
         dcode.addActionListener(new java.awt.event.ActionListener() {
@@ -704,7 +694,7 @@ public class MainWindow extends javax.swing.JFrame {
                 dcodeActionPerformed(evt);
             }
         });
-        Add_Pannel.add(dcode, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 180, 250, 40));
+        Add_Pannel.add(dcode, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 180, 250, 40));
 
         dtype.setBackground(new java.awt.Color(0, 0, 0,100));
         dtype.setEditable(true);
@@ -718,9 +708,8 @@ public class MainWindow extends javax.swing.JFrame {
                 dtypeActionPerformed(evt);
             }
         });
-        Add_Pannel.add(dtype, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, 250, 40));
+        Add_Pannel.add(dtype, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, 250, 40));
 
-        sname.setBackground(new java.awt.Color(255, 255, 255));
         sname.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         sname.setForeground(new java.awt.Color(51, 51, 51));
         sname.addActionListener(new java.awt.event.ActionListener() {
@@ -728,9 +717,8 @@ public class MainWindow extends javax.swing.JFrame {
                 snameActionPerformed(evt);
             }
         });
-        Add_Pannel.add(sname, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 240, 250, 40));
+        Add_Pannel.add(sname, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 240, 250, 40));
 
-        dpurpose.setBackground(new java.awt.Color(255, 255, 255));
         dpurpose.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         dpurpose.setForeground(new java.awt.Color(51, 51, 51));
         dpurpose.addActionListener(new java.awt.event.ActionListener() {
@@ -738,15 +726,13 @@ public class MainWindow extends javax.swing.JFrame {
                 dpurposeActionPerformed(evt);
             }
         });
-        Add_Pannel.add(dpurpose, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, 250, 40));
+        Add_Pannel.add(dpurpose, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 300, 250, 40));
 
-        ccont.setBackground(new java.awt.Color(255, 255, 255));
         ccont.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         ccont.setForeground(new java.awt.Color(51, 51, 51));
         ccont.setMargin(new java.awt.Insets(10, 0, 0, 0));
-        Add_Pannel.add(ccont, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 40, 250, 40));
+        Add_Pannel.add(ccont, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 40, 250, 40));
 
-        scont.setBackground(new java.awt.Color(255, 255, 255));
         scont.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         scont.setForeground(new java.awt.Color(51, 51, 51));
         scont.setMargin(new java.awt.Insets(10, 0, 0, 0));
@@ -755,24 +741,22 @@ public class MainWindow extends javax.swing.JFrame {
                 scontActionPerformed(evt);
             }
         });
-        Add_Pannel.add(scont, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 110, 250, 40));
+        Add_Pannel.add(scont, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 110, 250, 40));
 
-        cname.setBackground(new java.awt.Color(255, 255, 255));
         cname.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         cname.setForeground(new java.awt.Color(51, 51, 51));
         cname.setMargin(new java.awt.Insets(10, 0, 0, 0));
-        Add_Pannel.add(cname, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 180, 250, 40));
+        Add_Pannel.add(cname, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 180, 250, 40));
 
         jLabel11.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(254, 254, 254));
         jLabel11.setText("Drug_Barcode:");
-        Add_Pannel.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 370, -1, 20));
+        Add_Pannel.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 370, -1, 20));
 
-        dbarcode.setBackground(new java.awt.Color(255, 255, 255));
         dbarcode.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         dbarcode.setForeground(new java.awt.Color(51, 51, 51));
         dbarcode.setMargin(new java.awt.Insets(10, 0, 0, 0));
-        Add_Pannel.add(dbarcode, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 360, 250, 40));
+        Add_Pannel.add(dbarcode, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, 250, 40));
 
         jButton13.setBackground(new java.awt.Color(4, 102, 67));
         jButton13.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
@@ -790,7 +774,7 @@ public class MainWindow extends javax.swing.JFrame {
                 jButton13ActionPerformed(evt);
             }
         });
-        Add_Pannel.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 540, 130, 60));
+        Add_Pannel.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 540, 130, 60));
 
         jButton16.setBackground(new java.awt.Color(178, 14, 26));
         jButton16.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
@@ -803,28 +787,28 @@ public class MainWindow extends javax.swing.JFrame {
                 jButton16ActionPerformed(evt);
             }
         });
-        Add_Pannel.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 540, 150, 60));
+        Add_Pannel.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 540, 150, 60));
 
         jLabel12.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(254, 254, 254));
         jLabel12.setText("Mfd_Date :");
-        Add_Pannel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 260, 80, 30));
+        Add_Pannel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 260, 80, 30));
 
         jLabel13.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(254, 254, 254));
         jLabel13.setText("Expiry_Date :");
-        Add_Pannel.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 320, 100, 40));
+        Add_Pannel.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 320, 100, 40));
 
         dquantity.setEditable(true);
         dquantity.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         dquantity.setForeground(new java.awt.Color(254, 254, 254));
-        dquantity.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quantity : ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40" }));
-        Add_Pannel.add(dquantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 570, 250, 40));
+        dquantity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Quantity : ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40" }));
+        Add_Pannel.add(dquantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 570, 250, 40));
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(254, 254, 254));
         jLabel15.setText("Drug_Quantity : ");
-        Add_Pannel.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 580, -1, -1));
+        Add_Pannel.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 580, -1, -1));
 
         AddUpdateButton.setBackground(new java.awt.Color(213, 79, 31));
         AddUpdateButton.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
@@ -837,29 +821,27 @@ public class MainWindow extends javax.swing.JFrame {
                 AddUpdateButtonActionPerformed(evt);
             }
         });
-        Add_Pannel.add(AddUpdateButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 540, 180, 60));
+        Add_Pannel.add(AddUpdateButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 540, 180, 60));
 
-        dcp.setBackground(new java.awt.Color(255, 255, 255));
         dcp.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         dcp.setForeground(new java.awt.Color(51, 51, 51));
         dcp.setMargin(new java.awt.Insets(10, 0, 0, 0));
-        Add_Pannel.add(dcp, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 430, 250, 40));
+        Add_Pannel.add(dcp, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 430, 250, 40));
 
         jLabel16.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(254, 254, 254));
         jLabel16.setText("Drug_CostPrice :");
-        Add_Pannel.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 440, -1, 20));
+        Add_Pannel.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 440, -1, 20));
 
-        dsp.setBackground(new java.awt.Color(255, 255, 255));
         dsp.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         dsp.setForeground(new java.awt.Color(51, 51, 51));
         dsp.setMargin(new java.awt.Insets(10, 0, 0, 0));
-        Add_Pannel.add(dsp, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 500, 250, 40));
+        Add_Pannel.add(dsp, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 500, 250, 40));
 
         jLabel17.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(254, 254, 254));
         jLabel17.setText("Drug_SellPrice :");
-        Add_Pannel.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 520, -1, 20));
+        Add_Pannel.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 520, -1, 20));
 
         mDate.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         mDate.setForeground(new java.awt.Color(254, 254, 254));
@@ -869,27 +851,27 @@ public class MainWindow extends javax.swing.JFrame {
                 mDateActionPerformed(evt);
             }
         });
-        Add_Pannel.add(mDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 260, -1, -1));
+        Add_Pannel.add(mDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 260, -1, -1));
 
         mMonth.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         mMonth.setForeground(new java.awt.Color(254, 254, 254));
         mMonth.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Month :", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
-        Add_Pannel.add(mMonth, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 260, -1, -1));
+        Add_Pannel.add(mMonth, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 260, -1, -1));
 
         mYear.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         mYear.setForeground(new java.awt.Color(254, 254, 254));
         mYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Year :", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030" }));
-        Add_Pannel.add(mYear, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 260, -1, -1));
+        Add_Pannel.add(mYear, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 260, -1, -1));
 
         eYear.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         eYear.setForeground(new java.awt.Color(254, 254, 254));
         eYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Year :", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030" }));
-        Add_Pannel.add(eYear, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 330, -1, -1));
+        Add_Pannel.add(eYear, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 330, -1, -1));
 
         eMonth.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         eMonth.setForeground(new java.awt.Color(254, 254, 254));
         eMonth.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Month :", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
-        Add_Pannel.add(eMonth, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 330, -1, -1));
+        Add_Pannel.add(eMonth, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 330, -1, -1));
 
         eDate.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         eDate.setForeground(new java.awt.Color(254, 254, 254));
@@ -899,42 +881,41 @@ public class MainWindow extends javax.swing.JFrame {
                 eDateActionPerformed(evt);
             }
         });
-        Add_Pannel.add(eDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 330, -1, -1));
+        Add_Pannel.add(eDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 330, -1, -1));
 
         pSection.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         pSection.setForeground(new java.awt.Color(254, 254, 254));
         pSection.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Section :", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" }));
-        Add_Pannel.add(pSection, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 470, -1, 40));
+        Add_Pannel.add(pSection, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 470, -1, 40));
 
         pPlace.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         pPlace.setForeground(new java.awt.Color(254, 254, 254));
         pPlace.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Place :", "Right", "Left", "Bottom", "Up" }));
-        Add_Pannel.add(pPlace, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 470, -1, 40));
+        Add_Pannel.add(pPlace, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 470, -1, 40));
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(254, 254, 254));
         jLabel14.setText("Drug_Place :");
-        Add_Pannel.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 480, -1, -1));
+        Add_Pannel.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 480, -1, -1));
 
         jLabel61.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         jLabel61.setForeground(new java.awt.Color(254, 254, 254));
         jLabel61.setText("Expiry_Status :");
-        Add_Pannel.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 400, -1, 40));
+        Add_Pannel.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 400, -1, 40));
 
-        expiry.setBackground(new java.awt.Color(255, 255, 255));
         expiry.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         expiry.setForeground(new java.awt.Color(51, 51, 51));
         expiry.setMargin(new java.awt.Insets(10, 0, 0, 0));
-        Add_Pannel.add(expiry, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 400, 250, 40));
+        Add_Pannel.add(expiry, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 400, 250, 40));
 
         jScrollPane3.setViewportView(Add_Pannel);
 
-        AddMedicine.getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, 1270, 650));
+        AddMedicine.getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1400, 620));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/med21.jpg"))); // NOI18N
-        AddMedicine.getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1380, 720));
+        AddMedicine.getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1400, 620));
 
-        jDesktopPane1.add(AddMedicine, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 130, 1380, 740));
+        jDesktopPane1.add(AddMedicine, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1380, 650));
 
         UpdateDrug.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
         UpdateDrug.setClosable(true);
@@ -944,6 +925,8 @@ public class MainWindow extends javax.swing.JFrame {
         UpdateDrug.setMaximizable(true);
         UpdateDrug.setResizable(true);
         UpdateDrug.setTitle("Search/Update/Delete");
+        UpdateDrug.setMinimumSize(new java.awt.Dimension(1380, 740));
+        UpdateDrug.setPreferredSize(new java.awt.Dimension(1380, 740));
         UpdateDrug.setVisible(false);
         UpdateDrug.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -955,42 +938,42 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel19.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(254, 254, 254));
         jLabel19.setText("Drug_Name:");
-        jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, 30));
+        jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, 30));
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(254, 254, 254));
         jLabel20.setText("Company_Name :");
-        jPanel2.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 160, -1, 40));
+        jPanel2.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 140, -1, 40));
 
         jLabel21.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(254, 254, 254));
         jLabel21.setText("Drug_Code:");
-        jPanel2.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, -1, 30));
+        jPanel2.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, 30));
 
         jLabel22.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(254, 254, 254));
         jLabel22.setText("Suplier Name :");
-        jPanel2.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 240, -1, 30));
+        jPanel2.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 210, -1, 30));
 
         jLabel23.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(254, 254, 254));
         jLabel23.setText("Company_Contact :");
-        jPanel2.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 100, -1, 30));
+        jPanel2.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 100, -1, 30));
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(254, 254, 254));
         jLabel24.setText("Suplier_Contact :");
-        jPanel2.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 310, -1, 30));
+        jPanel2.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 270, -1, 30));
 
         jLabel25.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(254, 254, 254));
         jLabel25.setText("Drug_Purpose:");
-        jPanel2.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, -1, 30));
+        jPanel2.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, 30));
 
         jLabel26.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel26.setForeground(new java.awt.Color(254, 254, 254));
         jLabel26.setText("Drug_Type:");
-        jPanel2.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, -1, 40));
+        jPanel2.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, -1, 40));
 
         dname1.setBackground(new java.awt.Color(0, 0, 0,103));
         dname1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -998,7 +981,7 @@ public class MainWindow extends javax.swing.JFrame {
         dname1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
         dname1.setMargin(new java.awt.Insets(0, 20, 0, 0));
         dname1.setPreferredSize(new java.awt.Dimension(14, 30));
-        jPanel2.add(dname1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 250, 40));
+        jPanel2.add(dname1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 250, 40));
 
         dcode1.setBackground(new java.awt.Color(0, 0, 0,100));
         dcode1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -1008,7 +991,7 @@ public class MainWindow extends javax.swing.JFrame {
                 dcode1ActionPerformed(evt);
             }
         });
-        jPanel2.add(dcode1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, 250, 40));
+        jPanel2.add(dcode1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, 250, 40));
 
         dtype1.setBackground(new java.awt.Color(0, 0, 0,100));
         dtype1.setEditable(true);
@@ -1022,7 +1005,7 @@ public class MainWindow extends javax.swing.JFrame {
                 dtype1ActionPerformed(evt);
             }
         });
-        jPanel2.add(dtype1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 250, 40));
+        jPanel2.add(dtype1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, 250, 40));
 
         sname1.setBackground(new java.awt.Color(0, 0, 0,100));
         sname1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -1032,7 +1015,7 @@ public class MainWindow extends javax.swing.JFrame {
                 sname1ActionPerformed(evt);
             }
         });
-        jPanel2.add(sname1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 230, 250, 40));
+        jPanel2.add(sname1, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 200, 250, 40));
 
         dpurpose1.setBackground(new java.awt.Color(0, 0, 0,100));
         dpurpose1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -1042,13 +1025,13 @@ public class MainWindow extends javax.swing.JFrame {
                 dpurpose1ActionPerformed(evt);
             }
         });
-        jPanel2.add(dpurpose1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 250, 40));
+        jPanel2.add(dpurpose1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 280, 250, 40));
 
         ccont1.setBackground(new java.awt.Color(0, 0, 0,100));
         ccont1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         ccont1.setForeground(new java.awt.Color(255, 255, 255));
         ccont1.setMargin(new java.awt.Insets(10, 0, 0, 0));
-        jPanel2.add(ccont1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 90, 250, 40));
+        jPanel2.add(ccont1, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 90, 250, 40));
 
         scont1.setBackground(new java.awt.Color(0, 0, 0,100));
         scont1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -1059,24 +1042,24 @@ public class MainWindow extends javax.swing.JFrame {
                 scont1ActionPerformed(evt);
             }
         });
-        jPanel2.add(scont1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 310, 250, 40));
+        jPanel2.add(scont1, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 270, 250, 40));
 
         cname1.setBackground(new java.awt.Color(0, 0, 0,100));
         cname1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         cname1.setForeground(new java.awt.Color(255, 255, 255));
         cname1.setMargin(new java.awt.Insets(10, 0, 0, 0));
-        jPanel2.add(cname1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 160, 250, 40));
+        jPanel2.add(cname1, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 140, 250, 40));
 
         jLabel27.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         jLabel27.setForeground(new java.awt.Color(254, 254, 254));
         jLabel27.setText("Drug_Barcode:");
-        jPanel2.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 40, -1, 20));
+        jPanel2.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, -1, 20));
 
         dbarcode1.setBackground(new java.awt.Color(0, 0, 0,100));
         dbarcode1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         dbarcode1.setForeground(new java.awt.Color(254, 254, 254));
         dbarcode1.setMargin(new java.awt.Insets(10, 0, 0, 0));
-        jPanel2.add(dbarcode1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 30, 250, 40));
+        jPanel2.add(dbarcode1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 30, 250, 40));
 
         jButton17.setBackground(new java.awt.Color(204, 0, 0));
         jButton17.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
@@ -1089,28 +1072,28 @@ public class MainWindow extends javax.swing.JFrame {
                 jButton17ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 620, 170, 60));
+        jPanel2.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 560, 170, 60));
 
         jLabel28.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(254, 254, 254));
         jLabel28.setText("Mfd_Date :");
-        jPanel2.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 400, 110, 30));
+        jPanel2.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 360, 110, 30));
 
         jLabel29.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel29.setForeground(new java.awt.Color(254, 254, 254));
         jLabel29.setText("Expiry_Date :");
-        jPanel2.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 460, 110, 40));
+        jPanel2.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 430, 110, 40));
 
         dquantity1.setEditable(true);
         dquantity1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         dquantity1.setForeground(new java.awt.Color(254, 254, 254));
-        dquantity1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Quantity : ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40" }));
-        jPanel2.add(dquantity1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 550, 250, 50));
+        dquantity1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Quantity : ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40" }));
+        jPanel2.add(dquantity1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 510, 250, 40));
 
         jLabel31.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(254, 254, 254));
         jLabel31.setText("Drug_Place : ");
-        jPanel2.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, -1, 30));
+        jPanel2.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 570, -1, 30));
 
         jButton18.setBackground(new java.awt.Color(213, 79, 31));
         jButton18.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
@@ -1123,29 +1106,29 @@ public class MainWindow extends javax.swing.JFrame {
                 jButton18ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 620, 200, 60));
+        jPanel2.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 560, 200, 60));
 
         dcp1.setBackground(new java.awt.Color(0, 0, 0,100));
         dcp1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         dcp1.setForeground(new java.awt.Color(254, 254, 254));
         dcp1.setMargin(new java.awt.Insets(10, 0, 0, 0));
-        jPanel2.add(dcp1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 400, 250, 40));
+        jPanel2.add(dcp1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 360, 250, 40));
 
         jLabel32.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(254, 254, 254));
         jLabel32.setText("Drug_CostPrice :");
-        jPanel2.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 420, -1, 20));
+        jPanel2.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, -1, 20));
 
         dsp1.setBackground(new java.awt.Color(0, 0, 0,100));
         dsp1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         dsp1.setForeground(new java.awt.Color(254, 254, 254));
         dsp1.setMargin(new java.awt.Insets(10, 0, 0, 0));
-        jPanel2.add(dsp1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 470, 250, 40));
+        jPanel2.add(dsp1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 440, 250, 40));
 
         jLabel33.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel33.setForeground(new java.awt.Color(254, 254, 254));
         jLabel33.setText("Drug_SellPrice :");
-        jPanel2.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 490, -1, 20));
+        jPanel2.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, -1, 20));
 
         jButton19.setBackground(new java.awt.Color(0, 51, 51));
         jButton19.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
@@ -1158,57 +1141,57 @@ public class MainWindow extends javax.swing.JFrame {
                 jButton19ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 620, 210, 60));
+        jPanel2.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 560, 210, 60));
 
         mDate1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         mDate1.setForeground(new java.awt.Color(254, 254, 254));
         mDate1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Day : ", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
-        jPanel2.add(mDate1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 400, -1, 40));
+        jPanel2.add(mDate1, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 360, -1, 40));
 
         pPlace1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         pPlace1.setForeground(new java.awt.Color(254, 254, 254));
         pPlace1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Place :", "Left", "Right", "Top", "Bottom" }));
-        jPanel2.add(pPlace1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 620, -1, 40));
+        jPanel2.add(pPlace1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 570, -1, 40));
 
         mMonth1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         mMonth1.setForeground(new java.awt.Color(254, 254, 254));
         mMonth1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Month : ", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
-        jPanel2.add(mMonth1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 400, -1, 40));
+        jPanel2.add(mMonth1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 360, -1, 40));
 
         eMonth1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         eMonth1.setForeground(new java.awt.Color(254, 254, 254));
         eMonth1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Month : ", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
-        jPanel2.add(eMonth1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 462, -1, 40));
+        jPanel2.add(eMonth1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 430, -1, 40));
 
         mYear1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         mYear1.setForeground(new java.awt.Color(254, 254, 254));
         mYear1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Year : ", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
-        jPanel2.add(mYear1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 400, -1, 40));
+        jPanel2.add(mYear1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 360, -1, 40));
 
         eYear1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         eYear1.setForeground(new java.awt.Color(254, 254, 254));
         eYear1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Year : ", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
-        jPanel2.add(eYear1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 462, -1, 40));
+        jPanel2.add(eYear1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 430, -1, 40));
 
         jLabel36.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel36.setForeground(new java.awt.Color(254, 254, 254));
         jLabel36.setText("Drug_Quantity : ");
-        jPanel2.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 560, -1, 30));
+        jPanel2.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, -1, 30));
 
         eDate1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         eDate1.setForeground(new java.awt.Color(254, 254, 254));
         eDate1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Day : ", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
-        jPanel2.add(eDate1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 462, -1, 40));
+        jPanel2.add(eDate1, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 430, -1, 40));
 
         pSection1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         pSection1.setForeground(new java.awt.Color(254, 254, 254));
         pSection1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Section :", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" }));
-        jPanel2.add(pSection1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 620, -1, 40));
+        jPanel2.add(pSection1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 570, -1, 40));
 
         jLabel62.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel62.setForeground(new java.awt.Color(254, 254, 254));
         jLabel62.setText("Expiry   :");
-        jPanel2.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 530, -1, 30));
+        jPanel2.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 500, -1, 30));
 
         expiryUpdate.setBackground(new java.awt.Color(0, 0, 0,100));
         expiryUpdate.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -1219,15 +1202,15 @@ public class MainWindow extends javax.swing.JFrame {
                 expiryUpdateActionPerformed(evt);
             }
         });
-        jPanel2.add(expiryUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 530, 250, 40));
+        jPanel2.add(expiryUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 500, 250, 40));
 
-        UpdateDrug.getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 1420, 710));
+        UpdateDrug.getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1540, 820));
 
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/med21.jpg"))); // NOI18N
         jLabel18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
         UpdateDrug.getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1540, 820));
 
-        jDesktopPane1.add(UpdateDrug, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 1540, 840));
+        jDesktopPane1.add(UpdateDrug, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1380, 740));
 
         viewDrugList.setBackground(new java.awt.Color(51, 51, 51));
         viewDrugList.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(254, 254, 254), 3, true));
@@ -1354,7 +1337,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/med21.jpg"))); // NOI18N
         viewDrugList.getContentPane().add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1370, 770));
 
-        jDesktopPane1.add(viewDrugList, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 40, -1, 700));
+        jDesktopPane1.add(viewDrugList, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, -1, 700));
 
         EditPrice.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
         EditPrice.setClosable(true);
@@ -1427,7 +1410,6 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel42.setForeground(new java.awt.Color(254, 254, 254));
         jLabel42.setText("Drug_Barcode :");
 
-        barcode.setBackground(new java.awt.Color(255, 255, 255));
         barcode.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         barcode.setForeground(new java.awt.Color(0, 0, 0));
         barcode.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -1476,11 +1458,9 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel39.setForeground(new java.awt.Color(254, 254, 254));
         jLabel39.setText("New_Price :");
 
-        old_Price.setBackground(new java.awt.Color(255, 255, 255));
         old_Price.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         old_Price.setForeground(new java.awt.Color(0, 0, 0));
 
-        new_price.setBackground(new java.awt.Color(255, 255, 255));
         new_price.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         new_price.setForeground(new java.awt.Color(0, 0, 0));
 
@@ -1549,7 +1529,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/med21.jpg"))); // NOI18N
         EditPrice.getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 630));
 
-        jDesktopPane1.add(EditPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 170, 1150, 650));
+        jDesktopPane1.add(EditPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1150, 650));
 
         drugsearchFrame.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
         drugsearchFrame.setClosable(true);
@@ -1622,7 +1602,6 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel46.setForeground(new java.awt.Color(254, 254, 254));
         jLabel46.setText("Name :");
 
-        drugNameInSearchSection.setBackground(new java.awt.Color(255, 255, 255));
         drugNameInSearchSection.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         drugNameInSearchSection.setForeground(new java.awt.Color(0, 0, 0));
         drugNameInSearchSection.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -1631,7 +1610,6 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
-        barcodeInSearchSection.setBackground(new java.awt.Color(255, 255, 255));
         barcodeInSearchSection.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         barcodeInSearchSection.setForeground(new java.awt.Color(0, 0, 0));
         barcodeInSearchSection.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -1684,7 +1662,7 @@ public class MainWindow extends javax.swing.JFrame {
                     .addComponent(barcodeInSearchSection, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(drugNameInSearchSection, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel46))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel47)
                     .addComponent(jLabel48))
@@ -1709,7 +1687,7 @@ public class MainWindow extends javax.swing.JFrame {
             .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jDesktopPane1.add(drugsearchFrame, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 50, 1070, 650));
+        jDesktopPane1.add(drugsearchFrame, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1070, 650));
 
         MoveDrug.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
         MoveDrug.setClosable(true);
@@ -1764,7 +1742,6 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel52.setForeground(new java.awt.Color(254, 254, 254));
         jLabel52.setText("Drug_Barcode :");
 
-        barcodeMoveDrug.setBackground(new java.awt.Color(255, 255, 255));
         barcodeMoveDrug.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         barcodeMoveDrug.setForeground(new java.awt.Color(0, 0, 0));
         barcodeMoveDrug.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -1777,7 +1754,6 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel53.setForeground(new java.awt.Color(254, 254, 254));
         jLabel53.setText("Old_Place  :");
 
-        oldPlace.setBackground(new java.awt.Color(255, 255, 255));
         oldPlace.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         oldPlace.setForeground(new java.awt.Color(0, 0, 0));
 
@@ -1886,7 +1862,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/med21.jpg"))); // NOI18N
         MoveDrug.getContentPane().add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1290, 650));
 
-        jDesktopPane1.add(MoveDrug, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 1290, 670));
+        jDesktopPane1.add(MoveDrug, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1290, 670));
 
         ExpiredDrugs.setClosable(true);
         ExpiredDrugs.setDefaultCloseOperation(javax.swing.WindowConstants.HIDE_ON_CLOSE);
@@ -1937,10 +1913,10 @@ public class MainWindow extends javax.swing.JFrame {
                     .addComponent(jLabel55, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 595, Short.MAX_VALUE))
-                .addGap(0, 3, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        jDesktopPane1.add(ExpiredDrugs, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 60, 1440, 620));
+        jDesktopPane1.add(ExpiredDrugs, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1440, 620));
 
         RenewYourDrug.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
         RenewYourDrug.setClosable(true);
@@ -1964,7 +1940,6 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel58.setForeground(new java.awt.Color(254, 254, 254));
         jLabel58.setText("Drug_Barcode :");
 
-        barcodeRenewDrug.setBackground(new java.awt.Color(255, 255, 255));
         barcodeRenewDrug.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         barcodeRenewDrug.setForeground(new java.awt.Color(0, 0, 0));
         barcodeRenewDrug.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -2058,7 +2033,6 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel63.setForeground(new java.awt.Color(254, 254, 254));
         jLabel63.setText("Drug_Quantity  :");
 
-        renewQuantity.setBackground(new java.awt.Color(255, 255, 255));
         renewQuantity.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         renewQuantity.setForeground(new java.awt.Color(0, 0, 0));
         renewQuantity.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -2196,7 +2170,7 @@ public class MainWindow extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        jDesktopPane1.add(RenewYourDrug, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 80, 1270, 600));
+        jDesktopPane1.add(RenewYourDrug, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1270, 600));
 
         RequiredDrugs.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         RequiredDrugs.setClosable(true);
@@ -2280,7 +2254,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel64.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/med21.jpg"))); // NOI18N
         RequiredDrugs.getContentPane().add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -2, 1388, 820));
 
-        jDesktopPane1.add(RequiredDrugs, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 40, 1390, 840));
+        jDesktopPane1.add(RequiredDrugs, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1390, 840));
 
         BuyDrug.setClosable(true);
         BuyDrug.setDefaultCloseOperation(javax.swing.WindowConstants.HIDE_ON_CLOSE);
@@ -2318,18 +2292,15 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel73.setText("Total_Ammount  :");
         jPanel18.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 326, -1, 46));
 
-        buyType.setBackground(new java.awt.Color(255, 255, 255));
         buyType.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         buyType.setForeground(new java.awt.Color(51, 51, 51));
         buyType.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Type  :", "Pills", "Injection", "Drinks", "Fizzing" }));
         jPanel18.add(buyType, new org.netbeans.lib.awtextra.AbsoluteConstraints(205, 319, 272, 46));
 
-        buyName.setBackground(new java.awt.Color(255, 255, 255));
         buyName.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         buyName.setForeground(new java.awt.Color(51, 51, 51));
         jPanel18.add(buyName, new org.netbeans.lib.awtextra.AbsoluteConstraints(205, 232, 272, 46));
 
-        buyAmmount.setBackground(new java.awt.Color(255, 255, 255));
         buyAmmount.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         buyAmmount.setForeground(new java.awt.Color(51, 51, 51));
         buyAmmount.addActionListener(new java.awt.event.ActionListener() {
@@ -2339,17 +2310,14 @@ public class MainWindow extends javax.swing.JFrame {
         });
         jPanel18.add(buyAmmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(728, 327, 272, 46));
 
-        buyCname.setBackground(new java.awt.Color(255, 255, 255));
         buyCname.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         buyCname.setForeground(new java.awt.Color(51, 51, 51));
         jPanel18.add(buyCname, new org.netbeans.lib.awtextra.AbsoluteConstraints(205, 397, 272, 46));
 
-        buycp.setBackground(new java.awt.Color(255, 255, 255));
         buycp.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         buycp.setForeground(new java.awt.Color(51, 51, 51));
         jPanel18.add(buycp, new org.netbeans.lib.awtextra.AbsoluteConstraints(728, 232, 272, 46));
 
-        buyquantity.setBackground(new java.awt.Color(255, 255, 255));
         buyquantity.setEditable(true);
         buyquantity.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         buyquantity.setForeground(new java.awt.Color(51, 51, 51));
@@ -2359,7 +2327,6 @@ public class MainWindow extends javax.swing.JFrame {
         jPanel19.setBackground(new java.awt.Color(51, 51, 51));
         jPanel19.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Buy Drugs", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 14), new java.awt.Color(254, 254, 254))); // NOI18N
 
-        buyBarcode.setBackground(new java.awt.Color(255, 255, 255));
         buyBarcode.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         buyBarcode.setForeground(new java.awt.Color(51, 51, 51));
         buyBarcode.addActionListener(new java.awt.event.ActionListener() {
@@ -2484,7 +2451,7 @@ public class MainWindow extends javax.swing.JFrame {
 
         BuyDrug.getContentPane().add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, 660));
 
-        jDesktopPane1.add(BuyDrug, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 90, 1080, 680));
+        jDesktopPane1.add(BuyDrug, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1080, 680));
 
         jInternalFrame1.setClosable(true);
         jInternalFrame1.setDefaultCloseOperation(javax.swing.WindowConstants.HIDE_ON_CLOSE);
@@ -2512,7 +2479,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel66.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/med21.jpg"))); // NOI18N
         jInternalFrame1.getContentPane().add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1808, 1030));
 
-        jDesktopPane1.add(jInternalFrame1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 1810, 1050));
+        jDesktopPane1.add(jInternalFrame1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1810, 1050));
 
         All_Deals.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         All_Deals.setClosable(true);
@@ -2556,7 +2523,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel74.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/med21.jpg"))); // NOI18N
         All_Deals.getContentPane().add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1580, 920));
 
-        jDesktopPane1.add(All_Deals, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 1580, 940));
+        jDesktopPane1.add(All_Deals, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1580, 940));
 
         Bill.setBackground(new java.awt.Color(255, 255, 255));
         Bill.setClosable(true);
@@ -2568,13 +2535,12 @@ public class MainWindow extends javax.swing.JFrame {
         Bill.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel22.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel22.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Drug Information", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(254, 254, 254))); // NOI18N
+        jPanel22.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Drug Information", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(254, 254, 254))); // NOI18N
 
         jLabel75.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         jLabel75.setForeground(new java.awt.Color(254, 254, 254));
         jLabel75.setText("Barcode      :");
 
-        billBarcode.setBackground(new java.awt.Color(255, 255, 255));
         billBarcode.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         billBarcode.setForeground(new java.awt.Color(0, 0, 0));
 
@@ -2593,7 +2559,6 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
-        billQuantity.setBackground(new java.awt.Color(255, 255, 255));
         billQuantity.setEditable(true);
         billQuantity.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         billQuantity.setForeground(new java.awt.Color(51, 51, 51));
@@ -2636,7 +2601,6 @@ public class MainWindow extends javax.swing.JFrame {
         jScrollPane8.setBorder(null);
         jScrollPane8.setForeground(new java.awt.Color(0, 0, 0));
 
-        billTable.setBackground(new java.awt.Color(255, 255, 255));
         billTable.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         billTable.setForeground(new java.awt.Color(0, 0, 0));
         billTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -2747,7 +2711,7 @@ public class MainWindow extends javax.swing.JFrame {
 
         Bill.getContentPane().add(jPanel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 610, 1160, 120));
 
-        jDesktopPane1.add(Bill, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, 1530, 760));
+        jDesktopPane1.add(Bill, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1530, 760));
 
         users.setClosable(true);
         users.setDefaultCloseOperation(javax.swing.WindowConstants.HIDE_ON_CLOSE);
@@ -2788,23 +2752,18 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel90.setForeground(new java.awt.Color(255, 255, 255));
         jLabel90.setText("Password  :");
 
-        usrid.setBackground(new java.awt.Color(255, 255, 255));
         usrid.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         usrid.setForeground(new java.awt.Color(51, 51, 51));
 
-        usrname.setBackground(new java.awt.Color(255, 255, 255));
         usrname.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         usrname.setForeground(new java.awt.Color(51, 51, 51));
 
-        usrph.setBackground(new java.awt.Color(255, 255, 255));
         usrph.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         usrph.setForeground(new java.awt.Color(51, 51, 51));
 
-        usrsal.setBackground(new java.awt.Color(255, 255, 255));
         usrsal.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         usrsal.setForeground(new java.awt.Color(51, 51, 51));
 
-        usradd.setBackground(new java.awt.Color(255, 255, 255));
         usradd.setColumns(20);
         usradd.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         usradd.setForeground(new java.awt.Color(51, 51, 51));
@@ -2830,7 +2789,6 @@ public class MainWindow extends javax.swing.JFrame {
         jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
         jSeparator1.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
 
-        usrpass.setBackground(new java.awt.Color(255, 255, 255));
         usrpass.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         usrpass.setForeground(new java.awt.Color(51, 51, 51));
 
@@ -3080,7 +3038,6 @@ public class MainWindow extends javax.swing.JFrame {
         userScrollPane.setBackground(new java.awt.Color(255, 255, 255));
         userScrollPane.setForeground(new java.awt.Color(0, 0, 0));
 
-        usrTable.setBackground(new java.awt.Color(255, 255, 255));
         usrTable.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         usrTable.setForeground(new java.awt.Color(0, 0, 0));
         usrTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -3113,7 +3070,6 @@ public class MainWindow extends javax.swing.JFrame {
 
         jPanel26.setBackground(new java.awt.Color(0, 0, 0,100));
 
-        usrid1.setBackground(new java.awt.Color(255, 255, 255));
         usrid1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         usrid1.setForeground(new java.awt.Color(51, 51, 51));
         usrid1.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -3152,7 +3108,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/med21.jpg"))); // NOI18N
         users.getContentPane().add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1800, 750));
 
-        jDesktopPane1.add(users, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 1800, 770));
+        jDesktopPane1.add(users, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1800, 770));
 
         AllBillingDetails.setClosable(true);
         AllBillingDetails.setDefaultCloseOperation(javax.swing.WindowConstants.HIDE_ON_CLOSE);
@@ -3309,7 +3265,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/med21.jpg"))); // NOI18N
         AllBillingDetails.getContentPane().add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1530, 730));
 
-        jDesktopPane1.add(AllBillingDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, 1530, 750));
+        jDesktopPane1.add(AllBillingDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1530, 750));
         try {
             AllBillingDetails.setMaximum(true);
         } catch (java.beans.PropertyVetoException e1) {
@@ -3356,7 +3312,7 @@ public class MainWindow extends javax.swing.JFrame {
 
         usrnme.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         usrnme.setForeground(new java.awt.Color(153, 0, 0));
-        usrnme.setText("Login Id:");
+        usrnme.setText("Username");
 
         jLabel112.setFont(new java.awt.Font("Tahoma", 1, 38)); // NOI18N
         jLabel112.setForeground(new java.awt.Color(255, 255, 255));
@@ -3371,7 +3327,6 @@ public class MainWindow extends javax.swing.JFrame {
         jPanel30Layout.setHorizontalGroup(
             jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel30Layout.createSequentialGroup()
-                .addGap(51, 51, 51)
                 .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel30Layout.createSequentialGroup()
                         .addComponent(jLabel79)
@@ -3381,15 +3336,14 @@ public class MainWindow extends javax.swing.JFrame {
                         .addComponent(jLabel77, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
                         .addComponent(today)))
+                .addGap(124, 124, 124)
                 .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel112, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel30Layout.createSequentialGroup()
-                        .addGap(325, 325, 325)
-                        .addComponent(jLabel112, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 127, Short.MAX_VALUE))
-                    .addGroup(jPanel30Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel117, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(302, 302, 302)))
+                        .addGap(177, 177, 177)))
+                .addGap(87, 87, 87)
                 .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel30Layout.createSequentialGroup()
                         .addComponent(jLabel81)
@@ -3403,22 +3357,10 @@ public class MainWindow extends javax.swing.JFrame {
                         .addComponent(jLabel110)
                         .addGap(18, 18, 18)
                         .addComponent(usrnme, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(192, 192, 192))
+                .addContainerGap(482, Short.MAX_VALUE))
         );
         jPanel30Layout.setVerticalGroup(
             jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel30Layout.createSequentialGroup()
-                .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel110, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(usrnme, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel80, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(loginas, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(loginId, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel81, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
             .addGroup(jPanel30Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3431,10 +3373,24 @@ public class MainWindow extends javax.swing.JFrame {
                             .addComponent(today, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel77, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel30Layout.createSequentialGroup()
-                        .addComponent(jLabel112)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel117)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel30Layout.createSequentialGroup()
+                        .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel30Layout.createSequentialGroup()
+                                .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabel110, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(usrnme, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabel80, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(loginas, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(loginId, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel81, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel30Layout.createSequentialGroup()
+                                .addComponent(jLabel112)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel117)))
                         .addGap(26, 26, 26))))
         );
 
@@ -3466,7 +3422,6 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel100.setForeground(new java.awt.Color(255, 255, 255));
         jLabel100.setText("OR");
 
-        checkBarcode.setBackground(new java.awt.Color(255, 255, 255));
         checkBarcode.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
         checkBarcode.setForeground(new java.awt.Color(0, 0, 0));
         checkBarcode.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -3475,7 +3430,6 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
-        checkName.setBackground(new java.awt.Color(255, 255, 255));
         checkName.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         checkName.setForeground(new java.awt.Color(0, 0, 0));
         checkName.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -3515,9 +3469,8 @@ public class MainWindow extends javax.swing.JFrame {
         );
 
         jPanel33.setBackground(new java.awt.Color(0, 0, 0,100));
-        jPanel33.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Price", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanel33.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Price", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
 
-        checkPrice.setBackground(new java.awt.Color(255, 255, 255));
         checkPrice.setFont(new java.awt.Font("Dialog", 1, 70)); // NOI18N
         checkPrice.setForeground(new java.awt.Color(0, 0, 0));
         checkPrice.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -3597,7 +3550,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel97.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/med21.jpg"))); // NOI18N
         CheckDrugPrice.getContentPane().add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1270, 580));
 
-        jDesktopPane1.add(CheckDrugPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 260, 1170, 510));
+        jDesktopPane1.add(CheckDrugPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1170, 510));
 
         logindetails.setClosable(true);
         logindetails.setDefaultCloseOperation(javax.swing.WindowConstants.HIDE_ON_CLOSE);
@@ -3612,7 +3565,7 @@ public class MainWindow extends javax.swing.JFrame {
         jPanel37.setBackground(new java.awt.Color(0, 0, 0,100));
         jPanel37.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
 
-        detaily.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Year : ", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
+        detaily.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Year : ", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040" }));
         detaily.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 detailyItemStateChanged(evt);
@@ -3623,7 +3576,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel107.setForeground(new java.awt.Color(255, 255, 255));
         jLabel107.setText("User_Name : ");
 
-        detailm.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Month : ", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
+        detailm.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Month : ", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
         detailm.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 detailmItemStateChanged(evt);
@@ -3635,7 +3588,7 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
-        detaild.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Day : ", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+        detaild.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Day : ", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
         detaild.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 detaildItemStateChanged(evt);
@@ -3646,7 +3599,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel108.setForeground(new java.awt.Color(255, 255, 255));
         jLabel108.setText("Login_Date : ");
 
-        detailusr.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "User_Name : " }));
+        detailusr.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "User_Name : " }));
         detailusr.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 detailusrItemStateChanged(evt);
@@ -3720,7 +3673,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel106.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/med21.jpg"))); // NOI18N
         logindetails.getContentPane().add(jLabel106, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1520, 780));
 
-        jDesktopPane1.add(logindetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, 1520, 800));
+        jDesktopPane1.add(logindetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1520, 800));
 
         company.setClosable(true);
         company.setDefaultCloseOperation(javax.swing.WindowConstants.HIDE_ON_CLOSE);
@@ -3735,7 +3688,7 @@ public class MainWindow extends javax.swing.JFrame {
         jPanel34.setBackground(new java.awt.Color(0, 0, 0,100));
 
         jPanel35.setBackground(new java.awt.Color(0, 0, 0,120));
-        jPanel35.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Company Information", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanel35.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Company Information", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
 
         jLabel102.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         jLabel102.setForeground(new java.awt.Color(255, 255, 255));
@@ -3749,15 +3702,12 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel104.setForeground(new java.awt.Color(255, 255, 255));
         jLabel104.setText("Company_Address  :");
 
-        comname.setBackground(new java.awt.Color(255, 255, 255));
         comname.setFont(new java.awt.Font("Dialog", 1, 17)); // NOI18N
         comname.setForeground(new java.awt.Color(0, 0, 0));
 
-        comcontact.setBackground(new java.awt.Color(255, 255, 255));
         comcontact.setFont(new java.awt.Font("Dialog", 1, 17)); // NOI18N
         comcontact.setForeground(new java.awt.Color(0, 0, 0));
 
-        comadd.setBackground(new java.awt.Color(255, 255, 255));
         comadd.setColumns(20);
         comadd.setFont(new java.awt.Font("Dialog", 1, 17)); // NOI18N
         comadd.setForeground(new java.awt.Color(0, 0, 0));
@@ -3937,7 +3887,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel101.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/med21.jpg"))); // NOI18N
         company.getContentPane().add(jLabel101, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1520, 690));
 
-        jDesktopPane1.add(company, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 90, 1520, 710));
+        jDesktopPane1.add(company, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 1520, 710));
 
         ForgotPassword.setClosable(true);
         ForgotPassword.setDefaultCloseOperation(javax.swing.WindowConstants.HIDE_ON_CLOSE);
@@ -3949,7 +3899,7 @@ public class MainWindow extends javax.swing.JFrame {
         ForgotPassword.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel39.setBackground(new java.awt.Color(0, 0, 0,100));
-        jPanel39.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Change Password", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanel39.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Change Password", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
 
         jLabel113.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         jLabel113.setForeground(new java.awt.Color(255, 255, 255));
@@ -3989,7 +3939,6 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
-        usr_ID.setBackground(new java.awt.Color(255, 255, 255));
         usr_ID.setFont(new java.awt.Font("Tahoma", 0, 17)); // NOI18N
         usr_ID.setForeground(new java.awt.Color(51, 51, 51));
         usr_ID.addActionListener(new java.awt.event.ActionListener() {
@@ -3998,11 +3947,9 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
-        opass.setBackground(new java.awt.Color(255, 255, 255));
         opass.setFont(new java.awt.Font("Tahoma", 0, 17)); // NOI18N
         opass.setForeground(new java.awt.Color(51, 51, 51));
 
-        cnpass.setBackground(new java.awt.Color(255, 255, 255));
         cnpass.setFont(new java.awt.Font("Tahoma", 0, 17)); // NOI18N
         cnpass.setForeground(new java.awt.Color(51, 51, 51));
         cnpass.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -4011,7 +3958,6 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
-        npass.setBackground(new java.awt.Color(255, 255, 255));
         npass.setFont(new java.awt.Font("Tahoma", 0, 17)); // NOI18N
         npass.setForeground(new java.awt.Color(51, 51, 51));
         npass.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -4096,11 +4042,11 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel111.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         ForgotPassword.getContentPane().add(jLabel111, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 2, 890, 470));
 
-        jDesktopPane1.add(ForgotPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 900, 500));
+        jDesktopPane1.add(ForgotPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 900, 500));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/med21.jpg"))); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(1920, 1080));
-        jDesktopPane1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1970, 1120));
+        jDesktopPane1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1790, 1120));
 
         jMenuBar1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jMenuBar1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -4445,17 +4391,15 @@ public class MainWindow extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
             .addComponent(jToolBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1785, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jDesktopPane1)
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -4482,7 +4426,7 @@ public class MainWindow extends javax.swing.JFrame {
         obj.pstmt=obj.con.prepareStatement(sql); // prepare sql statement
         obj.rst=obj.pstmt.executeQuery(); // execute sql statement
         drugListTable.setModel(DbUtils.resultSetToTableModel(obj.rst)); // set data in the table 
-    }catch(Exception e){
+    }catch(SQLException e){
         JOptionPane.showMessageDialog(null,e.getMessage(),"Error",2);
     }
     }//GEN-LAST:event_jMenuItem3ActionPerformed
@@ -4540,7 +4484,7 @@ public class MainWindow extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null,"Drug has been Added Successfully","Success Operation",1);
                
                  }
-                catch(Exception e){
+                catch(HeadlessException | SQLException e){
                     JOptionPane.showMessageDialog(null,e.getMessage(),"Error",1);
                    }clear_add_drug();
                 }
@@ -4646,7 +4590,7 @@ JOptionPane.showMessageDialog(null,"Complete Drug Information","Missing Informat
         obj.pstmt=obj.con.prepareStatement(sql);
         obj.pstmt.execute();
         JOptionPane.showMessageDialog(null,"Drug has been Updated Successfully","Success Operation",1);
-    }catch(Exception e){
+    }catch(HeadlessException | SQLException e){
         JOptionPane.showMessageDialog(null, e.getMessage(),"Error",2);
     }clear();
 }
@@ -4676,7 +4620,7 @@ JOptionPane.showMessageDialog(null,"Complete Drug Information","Missing Informat
                 JOptionPane.showMessageDialog(null,"this barcode is not exist please Add first","Missing Information",2);
             }
         }
-        catch(Exception e){
+        catch(HeadlessException | SQLException e){
             JOptionPane.showMessageDialog(null,e.getMessage(),"Error",2);
         }
             if(found==true){
@@ -4691,7 +4635,7 @@ JOptionPane.showMessageDialog(null,"Complete Drug Information","Missing Informat
                   if(i>0){
                  JOptionPane.showMessageDialog(null,"Drug has been deleted Successfully","Success Operation",1);
                   }
-                 }catch(Exception e){
+                 }catch(HeadlessException | SQLException e){
                   JOptionPane.showMessageDialog(null, e.getMessage(),"Error",2);
                  }
                 }
@@ -4743,7 +4687,7 @@ JOptionPane.showMessageDialog(null,"Complete Drug Information","Missing Informat
             }
         }
         
-        catch(Exception e){
+        catch(HeadlessException | SQLException e){
             JOptionPane.showMessageDialog(null,e.getMessage(),"Error",2);
         }
     }//GEN-LAST:event_barcodeKeyReleased
@@ -5747,7 +5691,7 @@ get_amount();
         JOptionPane.showMessageDialog(null,"Complete information","Missing Information",2);
         }
         else if(checkpass()){
-              String sql = "update users set password = '"+npass.getText()+"' where user_id='"+usr_ID.getText()+"' ";
+              String sql = "update users set password = '"+npass.getText()+"' where id='"+usr_ID.getText()+"' ";
               try{
                   database.pstmt=database.con.prepareStatement(sql);
                   database.pstmt.execute();
@@ -5757,7 +5701,7 @@ get_amount();
                   npass.setText("");
                   cnpass.setText("");
               }
-              catch (Exception e) {
+              catch (HeadlessException | SQLException e) {
                 JOptionPane.showMessageDialog(null,e.getMessage(),"Error",2);
              }    
         }
@@ -5806,10 +5750,8 @@ get_amount();
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new MainWindow().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new MainWindow().setVisible(true);
         });
     }
 
@@ -6501,7 +6443,7 @@ private void sort(int index){ // one case will execute in these cases 1 or 2 or 
                 }
             }
          }
-         catch(Exception e){
+         catch(SQLException e){
              JOptionPane.showMessageDialog(null, e.getMessage(),"Error",2);
          }
      }
@@ -6515,7 +6457,7 @@ private void sort(int index){ // one case will execute in these cases 1 or 2 or 
                  found = true;
              }
          }
-         catch(Exception e){
+         catch(SQLException e){
              JOptionPane.showMessageDialog(null,e.getMessage(),"Error",2);
          }
          return found;
@@ -6544,7 +6486,7 @@ private void sort(int index){ // one case will execute in these cases 1 or 2 or 
              }
              dailyearn.setText(String.valueOf(amont)+" Rs.");
          }
-         catch(Exception e){
+         catch(NumberFormatException | SQLException e){
              JOptionPane.showMessageDialog(null, e.getMessage(),"Error",2);
          }
      }

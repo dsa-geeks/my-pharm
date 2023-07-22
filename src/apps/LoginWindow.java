@@ -41,7 +41,6 @@ public class LoginWindow extends javax.swing.JFrame {
         usr_id = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         usr_pass = new javax.swing.JPasswordField();
-        jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -100,14 +99,9 @@ public class LoginWindow extends javax.swing.JFrame {
         });
         jPanel1.add(usr_pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 432, 250, 40));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("User_ID : ");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 110, 30));
-
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("User_ID : ");
+        jLabel5.setText("User_Id : ");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 110, 30));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -266,7 +260,7 @@ public class LoginWindow extends javax.swing.JFrame {
       }
       else{
               try{
-                  String sql = "select id,password, user_type from users where id='"+usr_id.getText()+"'";
+                  String sql = "select user_id, password, user_type from users where user_id='"+usr_id.getText()+"'";
                   PharmacyDatabase obj = new PharmacyDatabase();
                   obj.pstmt = obj.con.prepareStatement(sql);
                   obj.rst=obj.pstmt.executeQuery();
@@ -329,7 +323,6 @@ public class LoginWindow extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
